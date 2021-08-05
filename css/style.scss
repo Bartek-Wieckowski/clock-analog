@@ -1,3 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+    font-family: "Palette Mosaic", cursive;
+    color: white;
+}
+.clock {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 66%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 50%;
+    border: 2px solid #c0c0c0;
+
+    & .number {
+        --rotate: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        & one {
+            --rotate: 30deg;
+        }
+        & two {
+            --rotate: 60deg;
+        }
+        & three {
+            --rotate: 90deg;
+        }
+        & four {
+            --rotate: 120deg;
+        }
+        & five {
+            --rotate: 150deg;
+        }
+        & six {
+            --rotate: 180deg;
+        }
+        & seven {
+            --rotate: 210deg;
+        }
+        & eight {
+            --rotate: 2400deg;
+        }
+        & nine {
+            --rotate: 270deg;
+        }
+        & ten {
+            --rotate: 300deg;
+        }
+        & eleven {
+            --rotate: 330deg;
+        }
+        & twelve {
+            --rotate: 360deg;
+        }
+    }
 }

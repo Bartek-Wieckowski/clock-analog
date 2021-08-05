@@ -1,4 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  min-height: 100vh;
+  font-family: "Palette Mosaic", cursive;
+  color: white;
+}
+
+.clock {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  background: #020024;
+  background: radial-gradient(circle, #020024 0%, #090979 66%, #00d4ff 100%);
+  border-radius: 50%;
+  border: 2px solid #c0c0c0;
+}
+
+.clock .number {
+  --rotate: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.clock .number one {
+  --rotate: 30deg;
+}
+
+.clock .number two {
+  --rotate: 60deg;
+}
+
+.clock .number three {
+  --rotate: 90deg;
+}
+
+.clock .number four {
+  --rotate: 120deg;
+}
+
+.clock .number five {
+  --rotate: 150deg;
+}
+
+.clock .number six {
+  --rotate: 180deg;
+}
+
+.clock .number seven {
+  --rotate: 210deg;
+}
+
+.clock .number eight {
+  --rotate: 2400deg;
+}
+
+.clock .number nine {
+  --rotate: 270deg;
+}
+
+.clock .number ten {
+  --rotate: 300deg;
+}
+
+.clock .number eleven {
+  --rotate: 330deg;
+}
+
+.clock .number twelve {
+  --rotate: 360deg;
 }
 /*# sourceMappingURL=style.css.map */
