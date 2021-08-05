@@ -7,7 +7,7 @@ function clockSetup() {
   const currDate = new Date();
   const secondsRatio = currDate.getSeconds() / 60;
   const minutesRatio = (secondsRatio + currDate.getMinutes()) / 60;
-  const hourRatio = minutesRatio + currDate.getHours() / 12;
+  const hourRatio = (minutesRatio + currDate.getHours()) / 12;
 
   setRotate(seconds, secondsRatio);
   setRotate(minutes, minutesRatio);
