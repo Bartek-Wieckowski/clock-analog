@@ -33,43 +33,42 @@ body {
         height: 100%;
         text-align: center;
         font-size: 1.5rem;
-        & one {
-            --rotate: 30deg;
-        }
-        & two {
-            --rotate: 60deg;
-        }
-        & three {
-            --rotate: 90deg;
-        }
-        & four {
-            --rotate: 120deg;
-        }
-        & five {
-            --rotate: 150deg;
-        }
-        & six {
-            --rotate: 180deg;
-        }
-        & seven {
-            --rotate: 210deg;
-        }
-        & eight {
-            --rotate: 2400deg;
-        }
-        & nine {
-            --rotate: 270deg;
-        }
-        & ten {
-            --rotate: 300deg;
-        }
-        & eleven {
-            --rotate: 330deg;
-        }
-        & twelve {
-            --rotate: 360deg;
-        }
+        transform: rotate(var(--rotate));
     }
+    & .one {
+        --rotate: 30deg;
+    }
+    & .two {
+        --rotate: 60deg;
+    }
+    & .three {
+        --rotate: 90deg;
+    }
+    & .four {
+        --rotate: 120deg;
+    }
+    & .five {
+        --rotate: 150deg;
+    }
+    & .six {
+        --rotate: 180deg;
+    }
+    & .seven {
+        --rotate: 210deg;
+    }
+    & .eight {
+        --rotate: 240deg;
+    }
+    & .nine {
+        --rotate: 270deg;
+    }
+    & .ten {
+        --rotate: 300deg;
+    }
+    & .eleven {
+        --rotate: 330deg;
+    }
+
     & .hand {
         position: absolute;
         bottom: 50%;

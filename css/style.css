@@ -42,54 +42,52 @@ body {
   height: 100%;
   text-align: center;
   font-size: 1.5rem;
+  -webkit-transform: rotate(var(--rotate));
+          transform: rotate(var(--rotate));
 }
 
-.clock .number one {
+.clock .one {
   --rotate: 30deg;
 }
 
-.clock .number two {
+.clock .two {
   --rotate: 60deg;
 }
 
-.clock .number three {
+.clock .three {
   --rotate: 90deg;
 }
 
-.clock .number four {
+.clock .four {
   --rotate: 120deg;
 }
 
-.clock .number five {
+.clock .five {
   --rotate: 150deg;
 }
 
-.clock .number six {
+.clock .six {
   --rotate: 180deg;
 }
 
-.clock .number seven {
+.clock .seven {
   --rotate: 210deg;
 }
 
-.clock .number eight {
-  --rotate: 2400deg;
+.clock .eight {
+  --rotate: 240deg;
 }
 
-.clock .number nine {
+.clock .nine {
   --rotate: 270deg;
 }
 
-.clock .number ten {
+.clock .ten {
   --rotate: 300deg;
 }
 
-.clock .number eleven {
+.clock .eleven {
   --rotate: 330deg;
-}
-
-.clock .number twelve {
-  --rotate: 360deg;
 }
 
 .clock .hand {
